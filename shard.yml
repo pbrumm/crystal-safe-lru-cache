@@ -1,0 +1,21 @@
+name: crystal_safe_lru_cache
+version: 0.1.0
+
+authors:
+  - Pete Brumm <pete@petebrumm.com>
+
+targets:
+  crystal_safe_lru_cache:
+    main: src/crystal_safe_lru_cache.cr
+
+crystal: 1.5.0
+
+license: MIT
+
+dependencies:
+  lru-cache:
+    github: nicolab/crystal-lru-cache
+  mt_helpers:
+    github: pbrumm/mt_helpers
+    branch: "fix/allow_hash_block_initialize"
+

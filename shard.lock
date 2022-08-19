@@ -1,0 +1,10 @@
+version: 2.0
+shards:
+  lru-cache:
+    git: https://github.com/nicolab/crystal-lru-cache.git
+    version: 1.0.3
+
+  mt_helpers:
+    git: https://github.com/pbrumm/mt_helpers.git
+    version: 0.1.0+git.commit.ffc99e725b910884dce9abc3a6000886ec125347
+
