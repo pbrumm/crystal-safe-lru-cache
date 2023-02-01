@@ -17,5 +17,5 @@ dependencies:
     github: nicolab/crystal-lru-cache
   mt_helpers:
     github: pbrumm/mt_helpers
-    branch: "fix/allow_hash_block_initialize"
+    #    branch: "fix/allow_hash_block_initialize"
 
