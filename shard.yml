@@ -14,7 +14,9 @@ license: MIT
 
 dependencies:
   lru-cache:
-    github: nicolab/crystal-lru-cache
+    github: pbrumm/crystal-lru-cache
+    branch: feature/add_callbacks
+
   mt_helpers:
     github: pbrumm/mt_helpers
     #    branch: "fix/allow_hash_block_initialize"
