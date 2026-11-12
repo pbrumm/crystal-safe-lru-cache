@@ -2,7 +2,7 @@ version: 2.0
 shards:
   lru-cache:
     git: git@github.com:pbrumm/crystal-lru-cache.git
-    version: 1.0.3+git.commit.0775808a115d4ef5711ccfc9d2892eef6a6757ea
+    version: 1.0.3+git.commit.0512f3a0c590e4a2cf02b94e23ea2a87b9dd0af7
 
   mt_helpers:
     git: https://github.com/pbrumm/mt_helpers.git
