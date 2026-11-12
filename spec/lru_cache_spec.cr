@@ -143,6 +143,25 @@ describe SafeLRUCache do
     end
   end
 
+  it "#||=" do
+    c = Cache.new(max_size: 1)
+    v = c.put_if_absent(:a, "a")
+    p v
+    c.has?(:a).should be_true
+    c.get!(:a).should eq "a"
+    c.expire_at!(:a).should be_nil
+
+    v = c.put_if_absent(:a, "b")
+    p v
+    c.has?(:a).should be_true
+    c.get!(:a).should eq "a"
+    c.expire_at!(:a).should be_nil
+
+    v = c.put_if_absent(:b, "b")
+
+    c.has?(:a).should be_false
+  end
+
   it "#set item" do
     c = Cache.new
     c.set(:a, {"a", nil})
